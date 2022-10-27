@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    /* overflow-x: hidden; */
+}
+
+*, *::before, *::after {box-sizing: border-box;}
+
+body{
+    background: #0D0A2C;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-glow{
+    position: absolute;
+    width: 100%;
+    top: -100px;
+    z-index: 1;
+}
+
+.wrap-mesh{
+    position: absolute;
+    width: 100%;
+    height: 300%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-size: cover;
+    background-image: url(/assets/mesh/mesh.svg);
+}
+
+/* NAV BAR CSS */
+
+.logo h1{
+    z-index: 199998;
+    color: white;
+    font-size: clamp(1.2rem, 1.2rem, 2rem);
+    font-weight: 600;  
+}
+
+.outline{
+    position: relative;
+    width: 110%;
+    height: 3px;
+    background-color: pink;
+    left: 10%;
+}
+
+.outline-a{
+    position: relative;
+    width: 50%;
+    height: 3px;
+    background-color: pink;
+    left: 10%;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+.logo:hover .outline{
+    animation-name: linemove;
+    animation-duration: 0.5s;
+}
+
+@keyframes linemove {
+    from {width: 0%;}
+    to {width: 110%;}
+}
+
+@keyframes linemoves {
+    from {width: 0%;}
+    to {width: 50%;}
+}
+
+.primary-header{
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 150px;
+    padding: 0 5rem 0 5rem;
+    top: 0;
+    justify-content: space-between;
+    z-index: 99998;
+}
+
+
+.mobile-nav-toggle{
+    display: none;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.primary-navigation{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.primary-navigation a{
+    text-decoration: none;
+    margin-inline-end: 4rem;
+    color: white;
+    font-weight: 300;
+    z-index: 99999;
+}
+
+.primary-navigation li:hover .outline-a{
+    animation-name: linemoves;
+    animation-duration: 0.5s;
+    
+}
+
+@media (orientation: portrait) 
+{
+    .primary-navigation{
+        font-size: 1.3rem;
+        --gap: 4em;
+        position: fixed;
+        z-index: 1000;
+        inset: 0 0 0 0;
+        flex-direction: column;
+        padding: min(50vh,50rem) 2em;
+        background: hsl(0 0% 0% / 0.75);
+        backdrop-filter: blur(1rem);
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
+    }
+
+    .primary-navigation[data-visible="true"]{
+        transform: translateY(0%);
+    }
+    
+    .mobile-nav-toggle{
+    display: flex;
+    z-index: 99999;
+    }
+
+    .mobile-nav-toggle[aria-expanded="true"]{
+    z-index: 99999;
+    }
+
+    .primary-header{
+        padding: 0 2rem 0 2rem;
+    }
+
+}
+
+.flex{
+    display: flex;
+    gap: var(--gap, 1.5rem);
+}
