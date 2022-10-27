@@ -33,6 +33,30 @@ section{
     z-index: 1;
 }
 
+.mobile-glow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150vh;
+    background-image: url(/assets/glow-obj/screen-1.svg);
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+}
+
+@media (orientation: portrait) 
+{
+    .hero-glow{
+        display: none;
+    }
+
+    .mobile-glow{
+        display: block;
+    }
+}
+
 .wrap-mesh{
     position: absolute;
     width: 100%;
@@ -57,7 +81,7 @@ section{
     position: relative;
     width: 110%;
     height: 3px;
-    background-color: pink;
+    background-color: #FFC0FF;
     left: 10%;
 }
 
@@ -65,7 +89,7 @@ section{
     position: relative;
     width: 50%;
     height: 3px;
-    background-color: pink;
+    background-color: #FFC0FF;
     left: 10%;
 }
 
@@ -146,6 +170,10 @@ header ul{
         transition: transform 350ms ease-out;
     }
 
+    .primary-navigation a{
+        margin-inline-end: 0;
+    }
+
     .primary-navigation[data-visible="true"]{
         transform: translateY(0%);
     }
@@ -153,6 +181,7 @@ header ul{
     .mobile-nav-toggle{
     display: flex;
     z-index: 99999;
+    margin-right: 1rem;
     }
 
     .mobile-nav-toggle[aria-expanded="true"]{
@@ -169,3 +198,5 @@ header ul{
     display: flex;
     gap: var(--gap, 1.5rem);
 }
+
+/* NAV BAR CSS END */
