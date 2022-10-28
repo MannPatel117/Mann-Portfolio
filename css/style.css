@@ -434,11 +434,11 @@ header ul{
 @media (orientation: portrait) 
 {
     .flex-left{
-        height: 70%;
+        height: 80%;
         width: 100%;
     }
     .flex-right{
-        height: 30%;
+        height: 20%;
         width: 100%;
     }
     .subsection-text-wrap p{
