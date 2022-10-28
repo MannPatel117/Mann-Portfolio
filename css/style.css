@@ -16,20 +16,23 @@ body{
 }
 
 section{
+    position: absolute;
     height: 100vh;
     width: 100%;
+    z-index: 3;
 }
 
 .flex-center{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .hero-glow{
     position: absolute;
     width: 100%;
-    top: -100px;
+    top: -50px;
     z-index: 1;
 }
 
@@ -43,6 +46,7 @@ section{
     z-index: 1;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: bottom;
     display: none;
 }
 
@@ -200,3 +204,75 @@ header ul{
 }
 
 /* NAV BAR CSS END */
+
+/* HERO TEXT */
+
+.hero-text{
+    font-style: normal;
+    font-weight: 400;
+    color: #898CA9;
+    font-size: clamp(1.5rem, 2vw, 4rem);
+    text-align: center;
+}
+
+.text-main{
+    font-weight: 900;
+    font-size: clamp(3rem, 5vw, 6rem);
+    line-height: 130%;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.hero-text-wrap{
+    width: fit-content;
+}
+
+.hey{
+    position: relative;
+    left: 0;
+    width: fit-content;
+}
+
+.web-dev{
+    font-size: clamp(2rem, 3vw, 5rem);
+}
+
+.btn-wrap{
+    width: min(30vw, 40%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 500px){
+    .web-dev{
+        font-size: 25px;
+    }
+    .btn-wrap{
+        width: 90%;
+    }
+}
+
+
+
+.btn{
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+    border: none;
+    margin-top: 5%;
+}
+
+.btn-project{
+    background: linear-gradient(95.94deg, #8220FF 0%, #C57DFD 70.43%);
+}
+
+.btn-cv{
+    border: 2px solid #C57DFD;
+    background: transparent;
+}
