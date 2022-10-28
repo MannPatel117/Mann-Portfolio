@@ -103,6 +103,14 @@ section:nth-child(4)
     display: none;
 }
 
+@media (max-width: 1300px){
+    .hero-glow{
+        top: -150px;
+    }
+}
+
+
+
 @media (orientation: portrait) 
 {
     .hero-glow{
