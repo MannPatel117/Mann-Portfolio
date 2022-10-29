@@ -18,6 +18,21 @@ body{
 	-webkit-overflow-scrolling: touch
 }
 
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-track{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #FFC0FF;
+    border-radius: 10px;
+    border: 5px solid transparent;
+    background-clip: content-box;
+}
+
 .container{
     width: 100%;
     height: 100%;
@@ -635,6 +650,7 @@ header ul{
 
 .col:hover{
     transform: rotate(3deg) scale(1.01);
+    cursor: pointer;
 }
 
 
