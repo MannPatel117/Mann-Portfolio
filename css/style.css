@@ -62,6 +62,10 @@ section:nth-child(4)
     justify-content: flex-end;
     align-items: center;
 }
+.wrap{
+    height: auto;
+    width: 100%;
+}
 
 .flex-left{
     width: 60%;
@@ -473,10 +477,12 @@ header ul{
     justify-content: center;
     align-items: center;
 }
+
 .left-skills, .right-skills{
     width: 100%;
     height: auto;
 }
+
 .left-skills ul li, .right-skills ul li{
     font-weight: 400;
     font-size: 17px;
@@ -485,4 +491,72 @@ header ul{
     color: #898CA9;
     width: 90%;
     margin-top: 1%;
+}
+
+/* ABOUT ME SECTION ENDS */
+
+/* PROJECTS SECTION STARTS */
+
+.project-img-wrap{
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+}
+
+.project-img-wrap:hover .color-overlay{
+    opacity: 1;
+}
+
+.color-overlay{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgba(197, 125, 253, 0.5);
+    opacity: 0;
+    z-index: 4;
+    transition: 1s linear;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.project-img{
+    width: 100%
+}
+
+.full-wrap{
+    width: 80%;
+}
+
+.section-title h3{
+    font-weight: 400;
+    font-size: clamp(1.5rem, 2vw, 4rem);
+    line-height: 130%;
+    color: #FFFFFF;
+    text-align: center;
+    user-select: none;
+}
+
+.project-btn-mob{
+    width: 90%;
+}
+
+.align-left{
+    align-items: flex-start;
+}
+
+@media (orientation: portrait) 
+{
+    .project-btn-mob{
+        width: 100%;
+    }
+
+    .reverse{
+        flex-direction: column;
+    }
+
+    .align-left{
+        align-items: center;
+    }
 }

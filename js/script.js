@@ -21,7 +21,7 @@ gsap.to(".mann-img-mobile", {
         scrub: true,
         // markers:true,    
     },
-    y: 220,
+    y: 200,
     scale: 1.3,
     ease: "power1.out",
 })
