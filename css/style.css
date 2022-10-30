@@ -75,6 +75,7 @@ section:nth-child(2)
 
 section:nth-child(3)
 {
+    height: 300vh;
     top: 200vh;
 }
 
@@ -83,7 +84,17 @@ section:nth-child(4)
     top: 500vh;
 }
 
+@media (min-width: 500px){
+    section:nth-child(3)
+    {
+        top: 300vh;
+        height: 400vh;
+    }
+}
+
+
 @media (min-width: 1280px){
+
 section:nth-child(4)
 {
     top: 450vh;
