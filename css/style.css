@@ -8,6 +8,10 @@
 
 *, *::before, *::after {box-sizing: border-box;}
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background: #0D0A2C;
     width: 100vw;
@@ -75,44 +79,28 @@ section:nth-child(2)
 
 section:nth-child(3)
 {
-    height: 300vh;
+    height: 80vh;
     top: 200vh;
 }
-
 section:nth-child(4)
 {
-    top: 500vh;
+    height: 70vh;
+    top: 280vh;
 }
-
-
-
-@media (min-width: 1280px){
-
-section:nth-child(4)
+section:nth-child(5)
 {
-    top: 450vh;
+    height: 70vh;
+    top: 350vh;
 }
-section:nth-child(3)
-    {
-        height: 250vh;
-    }
-    section:nth-child(4)
+section:nth-child(6)
 {
-    top: 450vh;
+    height: 70vh;
+    top: 420vh;
 }
-
-}
-
-@media (max-width: 500px){
-    section:nth-child(3)
-    {
-        top: 200vh;
-        height: 350vh;
-    }
-    section:nth-child(4)
-    {
-        top: 500vh;
-    }
+section:nth-child(7)
+{
+    height: 70vh;
+    top: 490vh;
 }
 
 
@@ -157,6 +145,10 @@ section:nth-child(3)
 .right-reverse{
     width: 60%;
     height: 100%;
+}
+
+.mob-margin{
+    margin-top: 35px;
 }
 
 @media (orientation: portrait) 
@@ -206,12 +198,15 @@ section:nth-child(3)
     .mobile-glow{
         display: block;
     }
+    .mob-mob{
+        display: none;
+    }
 }
 
 .wrap-mesh{
     position: absolute;
     width: 100%;
-    height: 550%;
+    height: 560vh;
     top: 0;
     left: 0;
     z-index: -1;
@@ -219,11 +214,11 @@ section:nth-child(3)
     background-image: url(/assets/mesh/mesh.svg);
 }
 
-@media (max-width: 1200px){
+/* @media (max-width: 1200px){
     .wrap-mesh{
         height: 650%;
     }
-}
+} */
 /* NAV BAR CSS */
 
 .logo h1{

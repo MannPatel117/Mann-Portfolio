@@ -11,8 +11,6 @@ function removeLoader() {
 
 }
 
-
-
 gsap.registerPlugin(ScrollTrigger);
 gsap.to(".mann-img", {
     scrollTrigger: {
@@ -36,7 +34,17 @@ gsap.to(".mann-img-mobile", {
         scrub: true,
         // markers:true,    
     },
-    y: 180,
+    y: 150,
     scale: 1.3,
     ease: "power1.out",
 })
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+            
+        });
+    });
+});
