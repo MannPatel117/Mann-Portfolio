@@ -84,23 +84,23 @@ section:nth-child(3)
 }
 section:nth-child(4)
 {
-    height: 70vh;
+    height: 80vh;
     top: 280vh;
 }
 section:nth-child(5)
 {
-    height: 70vh;
-    top: 350vh;
+    height: 80vh;
+    top: 360vh;
 }
 section:nth-child(6)
 {
-    height: 70vh;
-    top: 420vh;
+    height: 80vh;
+    top: 440vh;
 }
 section:nth-child(7)
 {
-    height: 70vh;
-    top: 490vh;
+    height: 80vh;
+    top: 520vh;
 }
 
 
