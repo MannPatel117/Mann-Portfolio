@@ -71,7 +71,16 @@ section{
     overflow-x: hidden;
     scroll-snap-align: start;
 }
-
+.wrap-mesh{
+    position: absolute;
+    width: 100%;
+    height: 600vh;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-size: cover;
+    background-image: url(/assets/mesh/mesh.svg);
+}
 section:nth-child(2)
 {
     top: 100vh;
@@ -106,27 +115,30 @@ section:nth-child(7)
 @media (max-width: 400px){
 section:nth-child(3)
 {
-    height: 100vh;
+    height: 90vh;
     top: 200vh;
 }
 section:nth-child(4)
 {
-    height: 100vh;
-    top: 300vh;
+    height: 90vh;
+    top: 290vh;
 }
 section:nth-child(5)
 {
-    height: 100vh;
-    top: 400vh;
+    height: 90vh;
+    top: 380vh;
 }
 section:nth-child(6)
 {
-    height: 100vh;
-    top: 500vh;
+    height: 90vh;
+    top: 470vh;
 }
 section:nth-child(7)
 {
-    top: 600vh;
+    top: 560vh;
+}
+.wrap-mesh{
+    height: 640vh;
 }
 }
 
@@ -229,16 +241,7 @@ section:nth-child(7)
     }
 }
 
-.wrap-mesh{
-    position: absolute;
-    width: 100%;
-    height: 600vh;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    background-size: cover;
-    background-image: url(/assets/mesh/mesh.svg);
-}
+
 
 /* @media (max-width: 1200px){
     .wrap-mesh{
