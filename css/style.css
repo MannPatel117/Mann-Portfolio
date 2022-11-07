@@ -231,7 +231,7 @@ section:nth-child(7)
 
 .outline{
     position: relative;
-    width: 110%;
+    width: 100%;
     height: 3px;
     background-color: #FFC0FF;
     left: 10%;
@@ -268,7 +268,7 @@ section:nth-child(7)
 
 @keyframes linemove {
     from {width: 0%;}
-    to {width: 110%;}
+    to {width: 100%;}
 }
 
 @keyframes linemoves {
@@ -280,7 +280,7 @@ section:nth-child(7)
     align-items: center;
     position: fixed;
     width: 100%;
-    height: 150px;
+    height: 80px;
     padding: 0 5rem 0 5rem;
     top: 0;
     justify-content: space-between;
@@ -321,6 +321,10 @@ header ul{
 .primary-navigation li a:active .primary-navigation li a{
     transform: translateX(4px);
     margin-inline-end: 3rem;
+}
+
+.navbar-color{
+    background: hsl(0 0% 0% / 0.75);
 }
 
 @media (orientation: portrait) 
