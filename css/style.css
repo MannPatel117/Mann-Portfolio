@@ -103,6 +103,32 @@ section:nth-child(7)
     top: 520vh;
 }
 
+@media (max-width: 400px){
+section:nth-child(3)
+{
+    height: 100vh;
+    top: 200vh;
+}
+section:nth-child(4)
+{
+    height: 100vh;
+    top: 300vh;
+}
+section:nth-child(5)
+{
+    height: 100vh;
+    top: 400vh;
+}
+section:nth-child(6)
+{
+    height: 100vh;
+    top: 500vh;
+}
+section:nth-child(7)
+{
+    top: 600vh;
+}
+}
 
 .flex-center{
     display: flex;
