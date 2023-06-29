@@ -74,7 +74,7 @@ section{
 .wrap-mesh{
     position: absolute;
     width: 100%;
-    height: 600vh;
+    height: 680vh;
     top: 0;
     left: 0;
     z-index: -1;
@@ -111,6 +111,11 @@ section:nth-child(7)
     height: 80vh;
     top: 520vh;
 }
+section:nth-child(8)
+{
+    height: 80vh;
+    top: 600vh;
+}
 
 @media (max-width: 400px){
 section:nth-child(3)
@@ -135,10 +140,15 @@ section:nth-child(6)
 }
 section:nth-child(7)
 {
+    height: 90vh;
     top: 560vh;
 }
+section:nth-child(8)
+{
+    top: 650vh;
+}
 .wrap-mesh{
-    height: 640vh;
+    height: 750vh;
 }
 }
 
